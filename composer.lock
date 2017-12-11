@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b2ed9f329478cd1650c47ec99a474aef",
+    "content-hash": "b8d8c4a1247c176066a20ab04df81b04",
     "packages": [
         {
             "name": "developercielo/api-3.0-php",
-            "version": "v1.1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/DeveloperCielo/API-3.0-PHP.git",
-                "reference": "4a29f0e209f2c2ed60db6124bc118cfbdfc2dff4"
+                "reference": "99d0a6a95f76e85a2c44e08c2eeb4d34b376554a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DeveloperCielo/API-3.0-PHP/zipball/4a29f0e209f2c2ed60db6124bc118cfbdfc2dff4",
-                "reference": "4a29f0e209f2c2ed60db6124bc118cfbdfc2dff4",
+                "url": "https://api.github.com/repos/DeveloperCielo/API-3.0-PHP/zipball/99d0a6a95f76e85a2c44e08c2eeb4d34b376554a",
+                "reference": "99d0a6a95f76e85a2c44e08c2eeb4d34b376554a",
                 "shasum": ""
             },
             "require": {
@@ -35,7 +35,7 @@
             ],
             "description": "Integração com a API 3.0 da Cielo",
             "homepage": "https://github.com/DeveloperCielo/API-3.0-PHP",
-            "time": "2017-08-16T21:00:42+00:00"
+            "time": "2017-12-07 14:45:14"
         }
     ],
     "packages-dev": [
@@ -368,16 +368,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.5.24",
+            "version": "v5.5.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "06135405bb1f736dac5e9529ed1541fc446c9c0f"
+                "reference": "0a5b6112f325c56ae5a6679c08a0a10723153fe0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/06135405bb1f736dac5e9529ed1541fc446c9c0f",
-                "reference": "06135405bb1f736dac5e9529ed1541fc446c9c0f",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/0a5b6112f325c56ae5a6679c08a0a10723153fe0",
+                "reference": "0a5b6112f325c56ae5a6679c08a0a10723153fe0",
                 "shasum": ""
             },
             "require": {
@@ -457,6 +457,7 @@
                 "guzzlehttp/guzzle": "Required to use the Mailgun and Mandrill mail drivers and the ping methods on schedules (~6.0).",
                 "laravel/tinker": "Required to use the tinker console command (~1.0).",
                 "league/flysystem-aws-s3-v3": "Required to use the Flysystem S3 driver (~1.0).",
+                "league/flysystem-cached-adapter": "Required to use Flysystem caching (~1.0).",
                 "league/flysystem-rackspace": "Required to use the Flysystem Rackspace driver (~1.0).",
                 "nexmo/client": "Required to use the Nexmo transport (~1.0).",
                 "pda/pheanstalk": "Required to use the beanstalk queue driver (~3.0).",
@@ -497,7 +498,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2017-12-07T01:28:21+00:00"
+            "time": "2017-12-11T14:59:28+00:00"
         },
         {
             "name": "league/flysystem",
@@ -3523,9 +3524,11 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": [],
-    "prefer-stable": false,
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "developercielo/api-3.0-php": 20
+    },
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": ">=7.0"

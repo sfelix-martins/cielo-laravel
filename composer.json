@@ -4,6 +4,8 @@
     "type": "library",
     "keywords": ["cielo", "gateway", "e-commerce", "api", "laravel"],
     "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable" : true,
     "authors": [
         {
             "name": "Samuel Martins",
@@ -12,7 +14,7 @@
     ],
     "require": {
         "php": ">=7.0",
-        "developercielo/api-3.0-php": "^1.1"
+        "developercielo/api-3.0-php": "dev-master"
     },
     "autoload": {
         "psr-4": {
