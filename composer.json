@@ -1,0 +1,43 @@
+{
+    "name": "smartins/cielo-laravel",
+    "description": "Project to use API Cielo Php Sdk with Laravel Framework",
+    "type": "library",
+    "keywords": ["cielo", "gateway", "e-commerce", "api", "laravel"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Samuel Martins",
+            "email": "sfelix_martins@hotmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "developercielo/api-3.0-php": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "SMartins\\Cielo\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "files": [
+            "tests/TestCase.php"
+        ],
+        "psr-4": {
+            "SMartins\\Cielo\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SMartins\\Cielo\\CieloServiceProvider"
+            ],
+            "aliases": [
+                "SMartins\\Cielo\\Facades\\Cielo"
+            ]
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "~3.0"
+    }
+}
