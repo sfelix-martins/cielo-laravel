@@ -13,6 +13,6 @@ class Cielo extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'cielo';
+        return 'Cielo';
     }
 }
